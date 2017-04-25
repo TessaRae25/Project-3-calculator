@@ -10,38 +10,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <div id="main">
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">Title</h1>
-            </header>
-        </div>
+    <h1>My Boring Calculator</h1>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
+        <div id="calculator-contain">
+            <form name="calculate">
+            <input type="text" id= "display" disabled>
+            <br>
 
-                <article>
-                   <p>Your content goes here.</p>
-                </article>
+            <input type="button" value="c" id="clear" onclick="displayScreen('c')">
+            <input type="button" value="<-" id="keys" onclick="backspace()">
+            <input type="button" value="+" id="keys" onclick="displayScreen('+')">
+            <br>
+
+            <input type="button" value="9" id="keys" onclick="displayScreen('9')">
+            <input type="button" value="8" id="keys" onclick="displayScreen('8')">
+            <input type="button" value="7" id="keys" onclick="displayScreen('7')">
+            <input type="button" value="-" id="keys" onclick="displayScreen('-')">
+            <br>
+
+            <input type="button" value="6" id="keys" onclick="displayScreen('6')">
+            <input type="button" value="5" id="keys" onclick="displayScreen('5')">
+            <input type="button" value="4" id="keys" onclick="displayScreen('4')">
+            <input type="button" value="*" id="keys" onclick="displayScreen('*')">
+            <br>
+
+            <input type="button" value="3" id="keys" onclick="displayScreen('3')">
+            <input type="button" value="2" id="keys" onclick="displayScreen('2')">
+            <input type="button" value="1" id="keys" onclick="displayScreen('1')">
+            <input type="button" value="/" id="divide" onclick="displayScreen('/')">
+            <br>
+
+            <input type="button" value="0" id="keys" onclick="displayScreen('0')">
+            <input type="button" value="." id="keys" onclick="displayScreen('.')">
+            
+
+            <input type="button" value="=" id="equal" onclick="solution()">
+
+            </form>
 
 
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                
-            </footer>
-        </div>
+        </div> <!-- closing for calculator-contain -->
+    </div> <!-- closing for main -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>

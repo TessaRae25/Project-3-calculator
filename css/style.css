@@ -1,0 +1,78 @@
+body {
+	background-image: url('../images/cactus.jpg');
+	background-repeat: repeat;
+}
+
+h1 {
+	background-color: #e9f1e1;
+	color: #49751e;
+	border: double 5px;
+	border-color: #81a454;
+	padding: 10px;
+	margin-right: 425px;
+	margin-left: 425px;
+	text-align: center;
+	font-family: georgia, tahoma, helvetica;
+}
+
+
+#calculator-contain {
+	text-align: center;
+	background-image: url('../images/calculator.png');
+	position: relative;
+	text-align: center;
+	border: solid 8px;
+	border-color: #4f4748;
+	padding-top: 40px;
+	margin-right: 500px;
+	margin-left: 500px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+}
+
+
+#keys {
+	background-color: #ceaf92;
+	font-size: 24px;
+	padding: 16px;
+	border: none;
+	border-radius: 4px;
+
+}
+
+#equal {
+	background-color: #fff;
+	font-size: 24px;
+	padding: 16px 40px;
+	border: none;
+	border-radius: 4px;
+
+}
+
+#clear {
+	background-color: #fff;
+	font-size: 24px;
+	padding: 16px 40px;
+	border: none;
+	border-radius: 4px;
+}
+
+#divide {
+ 	background-color: #ceaf92;
+	font-size: 24px;
+	padding: 16px 17px;
+	border: none;
+	border-radius: 4px;
+
+}
+
+#display {
+	text-align: left;
+	font-size: 45px;
+	width: 16px 40px;
+	left: -20px;
+	padding: 16px;
+	border: none;
+	border-radius: 4px;
+	background: transparent;
+}
